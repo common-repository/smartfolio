@@ -1,0 +1,393 @@
+/**
+ *
+ * The Client Machine
+ * Print CSS that makes those invoices and proposals look so nice
+ *
+ * This has the relevant styles copied from the main css and then overrides certain
+ * elements where necessary
+ *
+ **/
+
+/* CSS Reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+ol, ul, li {
+    list-style: none;
+    list-style-position: outside;
+}
+
+/* Generic Styling */
+a {
+    color: #304f54;
+    text-decoration: none;
+}
+
+body {
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #162426;
+    background: #fff;
+}
+
+/* content */
+#content {
+    width: 100%;
+    border-bottom: 1px #fff solid;
+}
+
+.content_inside {
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px 0 55px;
+}
+
+h3 {
+    font-size: 18px;
+    padding-bottom: 13px;
+    margin-bottom: 16px;
+    border-bottom: 1px #ccc solid;
+    font-weight: normal;
+}
+
+h3 strong {
+    color: #08182c;
+}
+
+.content_shadow {
+    width: 860px;
+    margin: 0 auto 30px;
+    padding: 25px 40px;
+    border: 1px solid #444444;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+#content .content_shadow .proposal_cont p {
+    margin-bottom: 25px;
+}
+
+.proposal_info {
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+.proposal_info .pro_logo {
+    float: left;
+    width: 200px;
+    display: inline;
+    margin-left: 20px;
+    padding: 8px 10px 0 0;
+}
+
+.proposal_info .pro_logo img {
+    width: 185px;
+    height: auto;
+    vertical-align: top;
+}
+
+.proposal_info .pro_txt {
+    float: left;
+    width: 500px;
+    padding: 4px 0 6px 20px;
+    line-height: 100%;
+    color: #333;
+    border-left: 1px #ccc solid;
+}
+
+.proposal_info .pro_btns {
+    float: right;
+    width: 146px;
+    display: inline;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.proposal_info .pro_btns a {
+    float: left;
+    display: block;
+    width: 146px;
+    height: 29px;
+    line-height: 29px;
+    color: #fff;
+    text-indent: 42px;
+    font-weight: bold;
+    background: url(images/rollovers.png) 0 -717px no-repeat;
+    margin-bottom: 10px;
+}
+
+.proposal_info .pro_btns a.btn_save {
+    background-position: 0 -717px;
+}
+
+.proposal_info .pro_btns a.btn_print {
+    background-position: 0 -746px;
+}
+
+.gap_line {
+    width: 100%;
+    height: 1px;
+    text-indent: -9999px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2px;
+    clear: both;
+}
+
+.proposal_cont {
+    width: 820px;
+    margin: 0 auto 24px;
+    color: #333;
+    line-height: 140%;
+    
+}
+
+.proposal_cont h2 {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 24px;
+    
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.proposal_cont h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #304e53;
+    margin-bottom: 8px;
+    border: 0;
+    padding: 0;
+}
+
+.proposal_cont .pro_cont {
+    padding: 18px 24px;
+}
+
+.complite_date {
+    float: left;
+    width: 280px;
+}
+
+.complite_date .pro_cont {
+    padding: 10px 24px 14px;
+}
+
+.complite_date p {
+    font-size: 25px;
+    color: #999;
+}
+
+.complite_date_bottom {
+    height: 10px;
+    width: 100%;
+    text-indent: -9999px;
+    
+    background: #09192f;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.pro_cont p {
+    margin-bottom: 10px;
+}
+
+.pro_cont a {
+    text-decoration: underline;
+}
+
+.pro_cont ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    list-style: disc;
+    list-style-position: outside;
+}
+
+.pro_cont ul li {
+    margin-left: 20px;
+    list-style: disc;
+    list-style-position: outside;
+}
+
+.pro_cont ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+.pro_cont ol li {
+    margin-left: 25px;
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+.proposal_cont .small_terms_box {
+    width: 700px;
+    font-size: 11px;
+    float: right;
+}
+
+.proposal_total {
+    width: 820px;
+    margin: 0 auto 25px;
+    
+    clear: both;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.proposal_total .proposal_to {
+    float: left;
+    color: #666;
+}
+
+.proposal_total .proposal_count {
+    float: right;
+    text-align: right;
+    color: #999;
+    padding-bottom: 10px;
+}
+
+.proposal_total strong {
+    color: #333;
+}
+
+.proposal_total .p1 {
+    font-weight: bold;
+}
+
+.proposal_total .p2 {
+    margin-bottom: 20px;
+}
+
+.proposal_total .p3 {
+    font-size: 36px;
+    color: #666;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.proposal_table {
+    page-break-inside: avoid;
+    width: 818px;
+    padding: 3px 0;
+    margin: 0 auto 20px;
+    background: #333;
+}
+
+.proposal_table table {
+    width: 818px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.proposal_table th {
+    height: 44px;
+    color: #fff;
+    ;
+    padding: 0 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.proposal_table th.th_total {
+    text-align: right;
+}
+
+.proposal_table td {
+    height: 44px;
+    background: #fff;
+    ;
+    padding: 0 20px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.proposal_table tr.even td {
+    background: #e2ecec;
+}
+
+.proposal_table.subtotal_table {
+    width: 430px;
+    float: right;
+    margin-right: 20px;
+}
+
+.proposal_table.subtotal_table table {
+    width: 430px;
+}
+
+.proposal_table.subtotal_table th.th_total {
+    height: 5px;
+}
+
+.invoice_total {
+    margin: 20px 0px;
+}
+
+.invoice_title {
+    color: #414141;
+    font-size: 50px;
+    line-height: 74px;
+}
+
+/* Prevent things from showing up */
+#header, #banner, #footer, #top, #top .tagline, #clear #head-img, #bottom_content, #menu, #content .btn_save, #content .btn_print, #content .btn_email, #content .btn_approve, #content .proposal_comments, #content-pad {
+    display: none;
+}
+
+#content .complite_date h2 {
+    display: none;
+}
+
+#content #contact_form {
+    display: none;
+}
+
+#content #galleryitem1 {
+    display: none;
+}
+
+.content_shadow {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#header .site-title, #header .site-description {
+	display: none;
+}
+#banner .site-title, #banner .site-description {
+	display: none;
+}
+
+
+#content .complite_date {
+	display: none
+}
+
+html body .pp_overlay {
+    display: none !important
+}
+
+html body .pp_content_container .pp_left .pp_right .pp_content {
+    display: none;
+    !important
+}

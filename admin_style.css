@@ -1,0 +1,203 @@
+/**
+ *
+ * CashPress
+ * Admin area stylesheet
+ *
+ **/
+
+
+#footer { display: none; } 
+
+label.second {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+table#upload_char {
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+#upload_char th {
+    width: 200px;
+    text-align: left;
+    font-weight: normal;
+}
+
+#wpwrap #wpbody .form-table img.adminicon {
+    margin: 0;
+    padding: 0;
+    float: left;
+    padding-right: 10px;
+}
+
+#specialties {
+    width: 915px;
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+.specialty {
+    width: 290px;
+    margin-right: 15px;
+    height: 80px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.specialty img {
+    float: left;
+}
+
+.specialty input {
+    float: right;
+}
+
+.specialty label {
+    line-height: 27px;
+}
+
+.client_metadata {
+    margin: 20px;
+}
+
+.client_metadata label {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.client_metadata input {
+    display: block;
+    width: 275px;
+    height: 15px;
+}
+
+.client_metadata textarea {
+    width: 80%;
+    height: 150px;
+}
+
+.terms_update textarea {
+    width: 80%;
+    height: 80px;
+}
+
+.terms_update label {
+    margin: 25px 0 5px 0;
+    display: block;
+}
+
+.terms_update input {
+    width: 50%;
+}
+
+.table_items {
+    margin: 10px 0px;
+}
+
+.table_items .single_item {
+    margin: 8px 0px;
+}
+
+.table_items label {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.table_items input.description {
+    width: 300px;
+    margin-right: 30px;
+}
+
+.table_items input.quantity {
+    width: 30px;
+    margin-right: 30px;
+}
+
+.table_items input.cost {
+    width: 70px;
+}
+
+.table_items span.special {
+    margin-left: 40px;
+}
+
+.invoice_metadata {
+    margin: 0px 0px 20px 0px;
+}
+
+.invoice_metadata label {
+    display: block;
+    width: 120px;
+    margin: 15px 0px 6px;
+}
+
+.invoice_metadata input {
+    width: 70%;
+}
+
+.invoice_metadata textarea {
+    width: 90%;
+    height: 150px;
+}
+
+.proposal_check {
+    width: 100%;
+    padding: 2px 2px;
+    margin: 20px 0 20px;
+    border: 1px #333 solid;
+    background: #333;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.proposal_check table {
+    width: 100%;
+    font-size: 10px;
+    color: #333;
+    background: #333;
+}
+
+.proposal_check th {
+    height: 22px;
+    width: 66px;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+}
+.proposal_check th#col_desc{width:45px;}
+
+
+.proposal_check td {
+    height: 22px;
+    background: #fff;
+    text-align: center;
+    padding: 0px;
+}
+
+.proposal_check input.description {
+    width: 230px;
+}
+
+.proposal_check input.quantity {
+    width: 40px;
+}
+
+.proposal_check input.cost {
+    width: 70px;
+}
+
+small.note {
+    color: #84a3c8;
+}
+
+td.preview.column-preview {
+	width: 100%;
+}
